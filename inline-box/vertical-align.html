@@ -1,0 +1,35 @@
+<!-- https://www.zhangxinxu.com/wordpress/2015/08/css-deep-understand-vertical-align-and-line-height/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      background-color: #e5edff;
+      /* line-height: 200px; */
+      font-size: 0;
+    }
+    .box img {
+      /* display: block; */
+      /* vertical-align: middle; */
+    }
+    .box span {
+      /* border: 1px solid salmon; */
+      /* inline行内元素设置height不生效？？？ */
+      /* height: 30px; */
+      display: inline-block; 
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="box">
+      textxxx
+      <span>span</span>
+      <img src="mm1.jpg">
+    </div>
+  </div>
+</body>
+</html>
