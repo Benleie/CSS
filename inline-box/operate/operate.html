@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      height: calc(100% - 61px);
+      /* height: 100%; */
+      margin: 0;
+      margin-top: 10px;
+      border-top: 1px solid orange;
+      border-bottom: 1px solid orange;
+      /* body的背景范围显然不是body的盒子模型 */
+      background-color: #f3f3f3;
+    }
+    .wrapper {
+      background-color: aliceblue;
+      width: 400px;
+      height: calc(100% - 20px);
+      margin: 50px auto 0;
+      padding: 10px;
+      /* margin: 0 auto; */
+      /* height: calc(100% - 50px); */
+      /* padding-top: 50px; */
+      /* margin-top: 50px; */
+    }
+    .wrapper >  section {
+      /* width: 100%; */
+      background-color: #ffffff;
+      border: 1px solid red;
+      padding: 10px;
+      margin-top: 10px;
+      overflow: auto;
+    }
+    .wrapper >  section > section {
+      display: flex;
+      justify-content: space-between;
+    }
+    .wrapper >  section > header {
+      /* 378 */
+      /* width: calc(100% - 32px); */
+      padding: 0 20px;
+      border: 1px solid salmon;
+      overflow: auto;
+    }
+    .box1 {
+      width: 100%;
+      padding: 0 1px;
+      border: 1px solid black;
+      /* background-color: aqua; */
+      /* width: 58px; */
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <section>
+      <header>
+        <div class="box1">精力管理</div>
+      </header>
+      <section>
+        <article>
+          <div>
+            <img src="./statistics.png">
+          </div>
+          <div>统计</div>
+        </article>
+        <article>
+          <div>
+            <img src="./structure.png" alt="">
+          </div>
+          <div>列表</div>
+        </article>
+        <article>
+          <div>
+            <img src="./task.png" alt="">
+          </div>
+          <div>任务</div>
+        </article>
+      </section>
+    </section>
+    <section>
+      <header>时间管理</header>
+      <section>
+        <article>
+          <div>
+            <img src="./operate.png" alt="">
+          </div>
+          <div>列表</div>
+        </article>
+        
+      </section>
+    </section>
+  </div>
+</body>
+</html>
