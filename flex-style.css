@@ -8,7 +8,7 @@ body {
 }
 h1,h2,h3,h4 {
 	color: #797979;
-    // border-bottom: solid 1px #797979;
+    /* // border-bottom: solid 1px #797979; */
     padding: 5px 0;
 }
 h1, h2 {
@@ -68,6 +68,13 @@ a {
 .box-4 {
 	flex-direction: row;
 	flex-wrap: wrap-reverse;
+}
+
+.box-4-1 {
+	flex-wrap: wrap;
+	align-content: center;
+	/* align-items: center; */
+	justify-content: space-between;
 }
 
 .box-5 {
@@ -172,7 +179,8 @@ a {
 
 .box-25 .box-item {
 	flex-basis: 200px;
-	width: 400px; // width 将失去作用
+	/* width 将失去作用 */
+	width: 400px; 
 }
 
 .box-26 {
