@@ -41,8 +41,6 @@
       /* margin-top: 25px; */
       /* vertical-align: middle; */
     }
-
-
     .center {
       display: flex;
       align-items: center;
@@ -51,8 +49,10 @@
       line-height: 100px;
     }
     .center2 {
+      /* 使用flex，子元素的vertical-align将自动失效 */
+      /* display: flex; */
       display: table;
-      vertical-align: middle;
+      line-height: 100px;
     }
     
     .box-item {
