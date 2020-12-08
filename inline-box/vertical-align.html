@@ -8,19 +8,60 @@
   <style>
     .box {
       background-color: #e5edff;
+      margin-bottom: 20px;
       /* line-height: 200px; */
-      font-size: 0;
+      /* font-size: 0; */
     }
-    .box img {
-      /* display: block; */
-      /* vertical-align: middle; */
+    .box > img {
+      vertical-align: middle;
     }
     .box span {
       /* border: 1px solid salmon; */
       /* inline行内元素设置height不生效？？？ */
       /* height: 30px; */
-      display: inline-block; 
+      /* display: inline-block;  */
     }
+    .placeholder {
+      width: 100px;
+      height: 100px;
+    }
+    .border {
+      /* border: 1px solid red; */
+      background-color: orange;
+    }
+    .inline { display: inline-block; }
+    .vertical {
+      /* vertical-align: top; */
+    }
+    .vertical > img { 
+      /* margin-top: 25px; */
+      vertical-align: middle;
+    }
+    .vertical > span { 
+      /* margin-top: 25px; */
+      /* vertical-align: middle; */
+    }
+
+
+    .center {
+      display: flex;
+      align-items: center;
+    }
+    .center1 {
+      line-height: 100px;
+    }
+    .center2 {
+      display: table;
+      vertical-align: middle;
+    }
+    
+    .box-item {
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+      margin-right: 10px;
+    }
+    .box-item > img { vertical-align: middle; }
   </style>
 </head>
 <body>
@@ -29,6 +70,28 @@
       textxxx
       <span>span</span>
       <img src="mm1.jpg">
+    </div>
+    <div class="box">
+      <div class="placeholder border inline"></div>
+      <div class="placeholder border inline vertical">
+        <span>right-span</span>
+      </div>
+      <div class="placeholder border inline vertical" style="width: 400px;">
+        <span>hxllxp</span>
+        <img src="mm1.jpg" width="50px" height="50px">
+        <span class="inline">?x?</span>
+      </div>
+    </div>
+    <div class="box center">
+      <div class="box-item center">
+        <img src="mm1.jpg" width="50px" height="50px">
+      </div>
+      <div class="box-item center1">
+        <img src="mm1.jpg" width="50px" height="50px">
+      </div>
+      <div class="box-item center2">
+        <img src="mm1.jpg" width="50px" height="50px">
+      </div>
     </div>
   </div>
 </body>
